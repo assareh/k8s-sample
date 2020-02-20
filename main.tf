@@ -20,6 +20,8 @@ variable "network_name" {
 
 provider "google" {
   region = "${var.region}"
+  credentials = "${var.gcp_credentials}"
+  project     = "${var.gcp_project}"
 }
 
 resource "google_compute_network" "default" {

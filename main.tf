@@ -1,3 +1,11 @@
+variable "gcp_credentials" {
+  description = "GCP credentials needed by google provider"
+}
+
+variable "gcp_project" {
+  description = "GCP project name"
+}
+
 variable "region" {
   default = "us-west1"
 }
